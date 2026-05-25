@@ -155,8 +155,14 @@ textarea {
 }
 
 .nav-links a {
+  color: rgba(255, 255, 255, 0.92);
   opacity: 0.84;
   transition: color 0.25s var(--ease), opacity 0.25s var(--ease);
+}
+
+.site-header.scrolled .nav-links a {
+  color: var(--charcoal);
+  opacity: 0.92;
 }
 
 .nav-links a:hover,

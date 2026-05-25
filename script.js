@@ -39,7 +39,7 @@ const revealObserver = new IntersectionObserver(
 document.querySelectorAll(".reveal").forEach((el) => revealObserver.observe(el));
 
 if (window.gsap && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-  gsap.from(".brand, .nav-links a, .menu-toggle", {
+  gsap.from(".brand, .menu-toggle", {
     y: -18,
     opacity: 0,
     duration: 0.85,
